@@ -6,26 +6,24 @@ const data = {
   headline: "Computational Aerospace Engineer — hypersonics, CFD, combustion",
   blurb:
     "Selected projects spanning hypersonic meshing/flow modeling, adjoint-based aero optimization, and combustion kinetics + DNS workflows.",
-  location: "America/New_York",
+  location: "Atlanta, GA",
   focus: "Hypersonics • CFD • Meshing • Combustion modeling • HPC",
   links: {
-    github: "https://github.com/YOUR_USERNAME",
-    linkedin: "https://www.linkedin.com/in/YOUR_HANDLE",
+    github: "https://github.com/priscillapak",
+    linkedin: "https://www.linkedin.com/in/priscilla-pak",
     resume: "./resume.pdf",
-    email: "mailto:you@example.com"
+    email: "mailto:pakpriscilla@gmail.com"
   },
   skills: [
     "Python",
     "CFD",
-    "Hypersonics (aerothermal)",
-    "Unstructured meshing",
+    "Hypersonics",
     "Pointwise",
-    "Kestrel (workflow)",
+    "Kestrel",
     "OpenFOAM",
-    "DAFoam (adjoint)",
     "Combustion kinetics (Cantera)",
-    "DNS workflow (NGA)",
-    "HPC (Stampede2)"
+    "DNS workflow",
+    "HPC"
   ],
   projects: [
     {
@@ -145,7 +143,7 @@ function App() {
               <div className="kvItem">
                 <div className="kvK">Notes</div>
                 <div className="kvV">
-                  Built as a static React page (no npm). Deploys cleanly to GitHub Pages.
+                  .
                 </div>
               </div>
             </div>
@@ -157,7 +155,7 @@ function App() {
         <section id="projects" className="section">
           <div className="sectionHeader">
             <h2 className="h2">Projects</h2>
-            <div className="small">Replace placeholders with real repos + outcomes.</div>
+            <div className="small">n</div>
           </div>
 
           <div className="grid">
@@ -180,17 +178,11 @@ function App() {
         <section id="about" className="section">
           <div className="sectionHeader">
             <h2 className="h2">About</h2>
-            <div className="small">2–4 tight sentences works better than a wall of text.</div>
           </div>
           <div className="card cardPad">
             <p className="sub" style={{ marginTop: 0 }}>
               I work on computational aerospace problems spanning hypersonic aerothermal flows, unstructured meshing
-              strategies, and combustion/kinetics workflows. I like clear assumptions, validation where possible, and
-              tooling that makes iteration cheap.
-            </p>
-            <p className="sub">
-              This page is intentionally minimal: high-signal project cards, links, and fast loading on GitHub Pages.
-            </p>
+              strategies, and combustion/kinetics workflows.            </p>
           </div>
         </section>
 
