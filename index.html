@@ -1,85 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priscilla Pak - Aerospace Engineer</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.6;
-            color: #333;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priscilla Pak — Portfolio</title>
+    <meta name="description" content="Portfolio page for Priscilla Pak." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React (ESM) + Babel for in-browser JSX transpile.
+         This avoids npm/tooling and works well for GitHub Pages.
+         If you later want a Vite build, we can migrate. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.3.1",
+          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client"
         }
-        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .project { 
-            background: #f8f9fa; 
-            padding: 20px; 
-            margin: 20px 0; 
-            border-left: 4px solid #3498db;
-        }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tag { 
-            background: #3498db; 
-            color: white; 
-            padding: 5px 15px; 
-            border-radius: 15px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Priscilla Pak</h1>
-    <p>Computational Aerospace Engineer | Hypersonics | Combustion Modeling</p>
-    <p>📧 pakpriscilla@gmail.com | 🔐 Active Secret Clearance</p>
+      }
+    </script>
 
-    <h2>About</h2>
-    <p>Computational engineer specializing in high-speed aerothermal flows and combustion modeling. 
-    MS in Aerospace Engineering from UT Austin with experience in DNS, CFD, and hypersonic analysis.</p>
-
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span class="skill-tag">ANSYS Fluent</span>
-        <span class="skill-tag">OpenFOAM</span>
-        <span class="skill-tag">DNS</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">HPC</span>
-        <span class="skill-tag">CFD</span>
-        <span class="skill-tag">MATLAB</span>
-        <span class="skill-tag">C++</span>
-    </div>
-
-    <h2>Selected Projects</h2>
-    
-    <div class="project">
-        <h3>Hypersonic Aerothermal Analysis (MIT Lincoln Lab)</h3>
-        <p><strong>Tech:</strong> Kestrel RANS solver, Python, Unstructured mesh generation</p>
-        <p>Performed aerothermal CFD analysis for hypersonic flight vehicles. Automated mesh generation 
-        and solver workflows, validated against benchmark data.</p>
-        <p><a href="https://github.com/yourusername/hypersonics-cfd">View Code →</a></p>
-    </div>
-
-    <div class="project">
-        <h3>Direct Numerical Simulation of NH3/H2 Flames (UT Austin)</h3>
-        <p><strong>Tech:</strong> DNS, Python, HPC (50M+ cells), Cantera</p>
-        <p>Developed high-fidelity combustion simulations for carbon-free power generation. 
-        Analyzed flame structures and validated against experimental burner data.</p>
-    </div>
-
-    <h2>Publications & Presentations</h2>
-    <ul>
-        <li>"Large-Eddy Simulations of NH3/H2 turbulent premixed flames" - UT Austin, Feb 2025</li>
-        <li>"Unstructured Meshing Strategies for Hypersonic Flowfields" - APS DFD, Nov 2023</li>
-    </ul>
-
-    <h2>Links</h2>
-    <p>
-        <a href="https://linkedin.com/in/priscilla-pak">LinkedIn</a> | 
-        <a href="https://github.com/yourusername">GitHub</a> |
-        <a href="resume.pdf">Resume (PDF)</a>
-    </p>
-</body>
+    <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+    <script type="text/babel" data-presets="react" data-type="module" src="./src/main.jsx"></script>
+    <!-- Optional: drop a resume at ./resume.pdf -->
+  </body>
 </html>
